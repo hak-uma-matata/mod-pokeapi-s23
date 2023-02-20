@@ -1,3 +1,3 @@
 export default function handler(req, res) {
-    return res.send("this is a sample endpoint")
+    return res.send(["1", "2", ["2"]])
 }
