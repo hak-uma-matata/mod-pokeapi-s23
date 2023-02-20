@@ -2,7 +2,6 @@
 import axios from "axios";
 export default async function handler(req, res) {
     let response;
-    console.log(req.query);
     try {
         response = await axios.get("https://pokeapi.co/api/v2/type/" + req.query.type);        
     } catch (e) {
