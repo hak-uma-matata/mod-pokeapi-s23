@@ -1,0 +1,18 @@
+//https://pokeapi.co/api/v2/type/{id or name}/
+import axios from "axios";
+export default async function handler(req, res) {
+    let response;
+    console.log(req.query);
+    try {
+        response = await axios.get("https://pokeapi.co/api/v2/type/" + req.query.type);        
+    } catch (e) {
+        console.log(e);
+    }
+    
+    let data = response.data.pokemon;
+    data = data.map((poke) => {
+        return poke.pokemon.name;
+    });
+    return res.send({pokemon: data});
+    
+}

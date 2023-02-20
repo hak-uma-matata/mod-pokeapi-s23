@@ -11,5 +11,6 @@ export default async function handler(req, res) {
     data.types = data.types.map((type) => {
         return type.type.name;
     });
-    return res.send({name: data.name, sprite: data.sprites.front_default, types: data.types});
+    console.log(data.name);
+    return res.send({pokemonName: data.name, sprite: data.sprites.front_default, types: data.types});
 }
