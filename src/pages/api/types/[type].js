@@ -7,7 +7,6 @@ export default async function handler(req, res) {
     } catch (e) {
         console.log(e);
     }
-    console.log(response.data);
     let data = response.data.pokemon;
     data = data.map((poke) => {
         return poke.pokemon.name;

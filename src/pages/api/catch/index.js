@@ -7,14 +7,13 @@ function getRandom(min, max) {
 export default async function handler(req, res) {
     let response;
     let pokemon = req.body.pokemon;
-    console.log(pokemon);
     try {
-        //response = await axios.get("https://pokeapi.co/api/v2/pokemon/" + pokemon);  
+        response = await axios.get("https://pokeapi.co/api/v2/pokemon/" + pokemon);  
     } catch (e) {
         console.log(e);
     }
-    //let pokemonData = response.data.stats[0].base_stat;
-    let HPMax = 100;
+    let HPMax = response.data.stats[0].base_stat;
+    console.log(HPMax);
     let N = getRandom(1, 255);
     let BALL = getRandom(1, 255);
     let HPCurrent = getRandom(1, HPMax);
