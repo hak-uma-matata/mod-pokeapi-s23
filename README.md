@@ -2,7 +2,7 @@
 
 Video Link: https://youtu.be/9J46Ky2MRy0
 
-###Added Features:
+### Added Features:
 - Two added API Endpoints: 
 	* Get Pokemon at Location (returns list of Pokemon at given location)
 	* Get Pokemon type compatability (returns lists of types of Pokemon the Pokemon is most and least effective against)
