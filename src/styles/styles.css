@@ -61,11 +61,11 @@ a:hover {
 
 .main-menu {
     background-color: white;
-    padding-bottom: 5px;
-    margin-left: 39%;
-    margin-right: 39%;
+    padding-bottom: 13px;
+    margin-left: 37%;
+    margin-right: 37%;
     border-radius: 15px;
-    margin-top: 5%;
+    margin-top: 35px;
 }
 
 .main-menu:hover {

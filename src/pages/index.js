@@ -23,6 +23,8 @@ export default function Home() {
       <Link href="/exp" class = "open-links">Get a Pokemon's Experience</Link>
       <Link href="/battle" class = "open-links">Battle two Pokemon</Link>
       <Link href="/catch" class = "open-links">Try to catch a Pokemon</Link>
+      <Link href="/location" class = "open-links">Get Pokemon in a location</Link>
+      <Link href="/eff" class = "open-links">Get a Pokemon's type compatibility in battle</Link>
       </div>
       </center>
     </>
