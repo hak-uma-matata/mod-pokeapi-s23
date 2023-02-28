@@ -1,5 +1,15 @@
 # Project 1 - The Better PokeAPI™️
 
+Video Link: https://youtu.be/9J46Ky2MRy0
+
+###Added Features:
+- Two added API Endpoints: 
+	* Get Pokemon at Location (returns list of Pokemon at given location)
+	* Get Pokemon type compatability (returns lists of types of Pokemon the Pokemon is most and least effective against)
+- Added search features wherever possible
+- Added front-end code to make the interface more userfriendly and visually aesthetic
+- Used capture algorithm for a different generation and takes PokeBall into account
+
 ## Description
 Create a backend that abstracts some aspects and combines features of the PokeAPI. For instance, an endpoint that just gets the name, image, and type of a specific Pokemon. 
 
