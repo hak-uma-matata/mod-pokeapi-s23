@@ -7,6 +7,10 @@ const fetcher = async (url) => {
     return res.data
 }
 
+function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
 export default function Random() {
     const { data, error, isLoading, isValidating } = useSWR("/api/", fetcher)
 
@@ -22,14 +26,23 @@ export default function Random() {
 
     return (
         <>
+            <center>
             <Link href="/"><h1>Better PokeAPI</h1></Link>
+            </center>
             {isValidating ? (
                 <h2>Validating</h2>
             ) : (
                 <>
-                    <h2>Name: {name.charAt(0).toUpperCase() + name.slice(1)}</h2>
+                    <div class = "poke-card">
+                    <center>
                     <img src={sprite} />
-                    <h2>Types: {types.map(type => <span>{type.charAt(0).toUpperCase() + type.slice(1)} </span>)}</h2>
+                    <div class = "poke-card-text">
+                    <h3>Name: {capitalize(name)}</h3>
+                    <h3>Types: {types.map(type => <span>{capitalize(type)} </span>)}</h3>
+                    </div>
+                    </center>
+                    
+                    </div>
                 </>
             )}
         </>

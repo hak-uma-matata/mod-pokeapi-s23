@@ -10,10 +10,11 @@ export default async function handler(req, res) {
         response = await axios.get("https://pokeapi.co/api/v2/pokemon/" + getRandom(1, 1009));        
     } catch (e) {
         console.log(e);
+        res.status(400).json();
     }
     let data = response.data;
     data.types = data.types.map((type) => {
         return type.type.name;
     });
-    return res.send({name: data.name, sprite: data.sprites.front_default, types: data.types});
+    return res.status(200).json({name: data.name, sprite: data.sprites.other['official-artwork'].front_default, types: data.types});
 }

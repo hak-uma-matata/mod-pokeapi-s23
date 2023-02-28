@@ -1,15 +1,133 @@
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h1 {
+    background-color: black;
+    font-family: "Rubik Medium", monospace;
+    float: center;
+    padding: 10px;
 }
+
+h2 {
+    font-family: "Rubik Regular", monospace;
+}
+
+form {
+    margin: 10px;
+}
+
+.heading {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: "Rubik Light", monospace;
+}
+
+body {
+    font-family: "Rubik Light", monospace;
+    background-color: rgb(172, 241, 197);
+}
+
 a {
     display: block;
-    padding: 10px 10px 20px;
-    margin: 5px;
     max-width: 500px;
     border-radius: 5px;
     text-decoration: none;
-    color: black;
 }
+
 a:hover {
-    color: pink;
+    color: rgb(255, 121, 121);
+}
+
+.input {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    padding-right: 4px;
+}
+
+.search {
+    padding: 6px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.main-menu {
+    background-color: white;
+    padding-bottom: 5px;
+    margin-left: 39%;
+    margin-right: 39%;
+    border-radius: 15px;
+    margin-top: 5%;
+}
+
+.main-menu:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.poke-card {
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 15px;
+}
+
+.poke-card-text {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.open-links {
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+.type-list {
+    background-color: white;
+    padding-bottom: 5px;
+    margin-left: 39%;
+    margin-right: 39%;
+    padding: 15px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+
+ul {
+    list-style: none;
+}
+
+#left-card {
+    margin: auto;
+    float: left;
+    width: 40%;
+    border: 10px;
+}
+
+#right-card {
+    margin: auto;
+    float: right;
+    width: 40%;
+    border: 10px;
+}
+
+.left-right-container {
+    padding: 20px;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+#input1 {
+    margin-right: 1px;
+    margin-left: 13px;
 }
